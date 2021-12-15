@@ -82,19 +82,43 @@ namespace Part2
             // EXERCICIO DE FIXACAO
 
 
-            Console.Write("Type your password: ");
-            int password = int.Parse(Console.ReadLine());
+            //Console.Write("Type your password: ");
+            //int password = int.Parse(Console.ReadLine());
 
-            while ( password != 2002)
+            //while ( password != 2002)
+            //{
+            //    Console.Write("Wrong password, try again!");
+
+            //    password = int.Parse(Console.ReadLine());
+
+
+            //}
+            //Console.WriteLine("Welcome Jean Michael");
+
+
+
+            // ESTRUTURA DE REPETICCAO (FOR)
+
+            // SINTAX 
+
+            //for ( INICIO, CONDICAO, INCREMENTO)
+            //{
+            //    COMANDO1
+            //    COMANDO2
+            //}
+
+
+            Console.Write("Quantos numeros inteiros voce vai digitar?");
+            int n = int.Parse(Console.ReadLine());
+
+            int soma = 0;
+            for (int i = 1; i <= n; i++)
             {
-                Console.Write("Wrong password, try again!");
-
-                password = int.Parse(Console.ReadLine());
-
-                
+                Console.Write("Valor : #{0}: ", i);
+                int valor = int.Parse(Console.ReadLine());
+                soma = soma + valor;
             }
-            Console.WriteLine("Welcome Jean Michael");
-
+            Console.WriteLine("Soma = " + soma);
         }
 
     }
